@@ -1,0 +1,40 @@
+          
+          body{
+            font-family: 'Asap', sans-serif;
+           }
+          .sri{ background: #fff;color: #000; height: 300px;border-radius: 10px; width: 30%; margin: 1.5%;float: left; padding:2% 1%; }
+           .sri label
+           {
+             background: #405fac;
+             color: #fff;
+             float: left;
+             width: 40px;
+             height: 40px;
+             border-radius: 50px;
+             padding: 7px 0px 1px 17px;
+             font-size: 30px;
+           }
+           .sri h2{ float: left; padding-left: 10px; margin-top: 15px; color: #131414; text-transform: uppercase;font-size: 24px;}
+           .sri p{ margin: 0px;}
+           .sri span{ margin: 0px;font-size: 16px;color: #9fa0a0; text-transform: capitalize;}
+           .form-control{margin: 2px 0px;    height: 30px;}
+           .btn{border-radius: 0px; padding: 4px 26px; background: #ed1f29;border-color: #ed1f29;}
+           
+           @media all and (min-width: 768px) and (max-width: 1023px) {
+             .sri{ width: 47%; margin: 1.5%;float: left; padding:2% 1%; }
+             }
+           @media all and (min-width: 320px) and (max-width: 767px) {
+             .sri{ width: 96%; margin:2%;float: left; padding:2% 1%; }
+               .six{ margin-top: 60px;}
+               .six2{ margin-top: 45%!important;}
+               .six3{ margin-top: 20%!important;}
+             }
+             .close, .close:focus, .close:hover {
+     color: white;
+     opacity: 1;
+ }
+ .btn-info:hover{
+  color: #fff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+ }

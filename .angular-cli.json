@@ -19,9 +19,20 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "assets/css/bootstrap.min.css",
+        "assets/fonts.css",
+        "styles.css",
+        "assets/css/bootstrap-datepicker3.css",
+        "assets/css/style.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "assets/js/bootstrap-datepicker.min.js",
+        "assets/js/tinyscrollbar.js",
+        "assets/js/login-js.js",
+        "assets/js/page-8.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

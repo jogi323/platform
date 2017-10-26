@@ -1,0 +1,478 @@
+<div class="model-full">
+  <div class="full-login">
+    <div class="container">
+      <div class="form-signin">
+        <div class="logo-img">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle btn-up" type="button" data-toggle="dropdown">LOCATION/LANGUAGE
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">abc</a>
+              </li>
+              <li>
+                <a href="#">bcd</a>
+              </li>
+              <li>
+                <a href="#">efg</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="form-section" onSubmit="return checkLogindetails();">
+          <div class="login-head">Platform</div>
+          <div class="login-txt">Login to your MIAPlatform my account</div>
+          <input type="email" id="inputEmail" class="form-control" placeholder="User Id*" required autofocus>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password*" required>
+          <div class="login-btn">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+          </div>
+          <span class="message" id="message_login" style="color: Red;"></span>
+          <div class="forgot-u-p">
+            <a href="#">Forget UserID/Password</a>
+          </div>
+        </form>
+        <div class="ac-txt">
+          Don't Have An Account?
+        </div>
+        <div class="login-btn">
+          <button data-toggle="modal" data-target="#myModal" class="sign-up-btn">Sign Up</button>
+        </div>
+        <div class="privecy-policy">
+          <a href="#">User Agreement | Privacy Policy</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- /container -->
+  </div>
+
+
+  <!-- model start -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <img src="../../assets/images/close.png">
+          </button>
+          <h4 class="modal-title">New User Registration</h4>
+        </div>
+        <div class="modal-body">
+          <div class="sub-sub-register">
+            <div class="regis">
+              <ul class="breadcrumb">
+                <li class="active tab-1">Email Address</li>
+                <li class="tab-2">Type of User</li>
+                <li class="tab-3">Create Firm Profile</li>
+                <li class="tab-4">Create User Profile</li>
+                <li class="tab-5">Accept User Agreement</li>
+              </ul>
+            </div>
+            <form class="reg-form">
+              <!-- start box-sec-1 -->
+              <div class="form-sec-1">
+                <div class="register-box">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div class="tle-txt">Email Address </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <label for="email">Enter Your Email address:
+                        <span class="required">*</span>
+                      </label>
+                      <input type="email" class="form-control" id="email_check" placeholder="email address" onblur="Javascript:checkEmaill();">
+                      <span class="message" id="message1" style="color: Red;"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Please Re-Enter Your Email address:
+                        <span class="required">*</span>
+                      </label>
+                      <input type="email" class="form-control" id="re_email_check" placeholder="email address" readonly onblur="Javascript:recheckEmaill();">
+                      <span class="message" id="message2" style="color: Red;"></span>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 bottom-botton-sec">
+                  <button class="res-close margin-right-6" data-dismiss="modal">[close]</button>
+                  <div class="btn btn-danger btn-nxt tab-2" id="next1" style="display:none;">NEXT</div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- end box-sec-1 -->
+
+
+              <!-- start box-sec-2 -->
+              <div class="form-sec-2">
+                <div class="register-box">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div class="tle-txt">Type Of User</div>
+                    <div class="sub-tle-txt">Select the type of user you would like to create :</div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 no-padding-res">
+                      <div class="select-div bg1" tabindex="1">
+                        <h4>Requester</h4>
+                        <p>Responders are typically financial institutions,law firms, or AR/AP departments responding to audit
+                          confirmation requests from an auditor.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 no-padding-res">
+                      <div class="select-div bg2" tabindex="1">
+                        <h4>Banker</h4>
+                        <p>Responders are typically financial institutions,law firms, or AR/AP departments responding to audit
+                          confirmation requests from an auditor.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 no-padding-res">
+                      <div class="select-div bg3" tabindex="1">
+                        <h4>Client</h4>
+                        <p>Responders are typically financial institutions,law firms, or AR/AP departments responding to audit
+                          confirmation requests from an auditor.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 bottom-botton-sec">
+                  <span class="res-close margin-right-6 tab-1">[back]</span>
+                  <div class="btn btn-danger btn-nxt tab-3">NEXT</div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- end box-sec-2 -->
+
+
+              <!-- start box-sec-3 -->
+              <div class="form-sec-3">
+                <div class="register-box">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div class="tle-txt">Create Firm Profile</div>
+                    <div class="sub-tle-txt">Please enter the appropriate firm information below</div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                    <div class="form-group clear-tab">
+                      <button class="clear-tab-btn" type="reset">Clear form</button>
+                      <label for="email">Firm name
+                        <span class="required">*</span>
+                      </label>
+                      <input type="text" class="form-control" id="check_firmname" placeholder="Firm name" onblur="Javascript:checkFirmnamee();">
+                      <span class="message" id="message3" style="color: Red;"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Office Name
+                        <span class="required">*</span>
+                      </label>
+                      <select class="form-control" id="sel1">
+                        <option>Abc</option>
+                        <option>Abc</option>
+                        <option>Abc</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Address1
+                        <span class="required">*</span>
+                      </label>
+                      <input type="text" class="form-control" id="check_address1" placeholder="Address1" onblur="Javascript:checkAddress11();" readonly>
+                      <span class="message" id="message4" style="color: Red;"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Address2</label>
+                      <input type="text" class="form-control" id="check_address2" placeholder="Address2" onblur="Javascript:checkAddress22();" readonly>
+                      <span class="message" id="message5" style="color: Red;"></span>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 media-no-padding">
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Country
+                          <span class="required">*</span>
+                        </label>
+                        <select class="form-control" id="sel1">
+                          <option>Abc</option>
+                          <option>Abc</option>
+                          <option>Abc</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">City
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="City" id="check_city" onblur="Javascript:checkCityy();" readonly>
+                        <span class="message" id="message6" style="color: Red;"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">State/Prov</label>
+                        <input type="text" class="form-control" placeholder="State/Prov" id="check_state" onblur="Javascript:checkStatee();" readonly>
+                        <span class="message" id="message7" style="color: Red;"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Postal Code
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Postal Code" id="check_postal" onblur="Javascript:checkPostall();" readonly>
+                        <span class="message" id="message8" style="color: Red;"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Phone</label>
+                        <input type="text" class="form-control" placeholder="Phone" id="check_phone" onblur="Javascript:checkPhonee();" readonly>
+                        <span class="message" id="message9" style="color: Red;"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Fax
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Fax" id="check_fax" onblur="Javascript:checkFaxx();" readonly>
+                        <span class="message" id="message10" style="color: Red;"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clear"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 bottom-botton-sec">
+                  <span class="res-close margin-right-6 tab-2">[back]</span>
+                  <div class="btn btn-danger btn-nxt tab-4" id="next2" style="display:none;">NEXT</div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- end box-sec-3 -->
+
+
+              <!-- start box-sec-4 -->
+              <div class="form-sec-4">
+                <div class="register-box">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div class="tle-txt">Create User Profile</div>
+                    <div class="sub-tle-txt">Please enter the appropriate firm information below</div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 no-padding-res">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Job Title
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Job Title" id="check_job" onblur="Javascript:checkJobb();">
+                        <span class="message" id="message11" style="color: Red;"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label for="email">First Name
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="First Name" id="check_first_name" onblur="Javascript:checkFnamee();"
+                          readonly>
+                        <span class="message" id="message12" style="color: Red;"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label for="email">Last name
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Last name" id="check_last_name" onblur="Javascript:checkLnamee();" readonly>
+                        <span class="message" id="message13" style="color: Red;"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Email
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Email" id="check_email_pro" onblur="Javascript:checkEmailproo();" readonly>
+                        <span class="message" id="message14" style="color: Red;"></span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 no-padding-res">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Mobile Country Code
+                          <span class="required">*</span>
+                        </label>
+                        <select class="form-control" id="sel1">
+                          <option>Abc</option>
+                          <option>Abc</option>
+                          <option>Abc</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Contact Phone
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Contact Phone" id="check_c_phone" onblur="Javascript:checkCphonee();"
+                          readonly>
+                        <span class="message" id="message15" style="color: Red;"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="form-group">
+                        <label for="email">Mobile Phone
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Mobile Phone" id="check_mobile" onblur="Javascript:checkMobilee();" readonly>
+                        <span class="message" id="message16" style="color: Red;"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label for="email">Request User ID
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Request User ID" id="check_user_id" onblur="Javascript:checkUseridd();"
+                          readonly>
+                        <span class="message" id="message17" style="color: Red;"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <a class="vertic-33">Request User ID</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 no-padding-res">
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label for="email">Authorization Code
+                          <span class="required">*</span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Authorization Code" id="check_authorization" onblur="Javascript:checkAuthorizationn();"
+                          readonly>
+                        <span class="message" id="message18" style="color: Red;"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <button type="button" class="btn btn-danger btn-dark btn-rqst vertic-33" onClick="Javascript:showMessage();">Request</button>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                      <div class="author-txt" style="display:none;" id="show_request">
+                        <p class="sub-para vertic-33"> Authorisation code has been sent to *********18</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clear"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 bottom-botton-sec">
+                  <span class="res-close margin-right-6 tab-3">[back]</span>
+                  <div class="btn btn-danger btn-nxt tab-5" id="next3" style="display:none;">NEXT</div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- end box-sec-4 -->
+
+              <!-- start box-sec-5 -->
+              <div class="form-sec-5">
+                <div class="register-box">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div class="tle-txt">Accept User Agreement</div>
+                    <div class="sub-tle-txt">View and Accept the User Agreement below ( or
+                      <a href="#">print User Agreement</a> |
+                      <a href="#">view Fees</a> )</div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div class="mainpart" id="scrollbar1">
+                      <div class="scrollbar">
+                        <div class="track">
+                          <div class="thumb">
+                            <div class="end"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="viewport">
+                        <div class="overview" style="top: 0px;">
+                          <div class="term-con">
+                            <ol>
+                              <li>
+                                <h5>Lorem ipsum dolor</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                  mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                  massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                  enim justo, rhoncus ut, imperdiet a,</p>
+                              </li>
+                              <li>
+                                <h5>Lorem ipsum dolor</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                  mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                  massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                  enim justo, rhoncus ut, imperdiet a,</p>
+                              </li>
+                              <li>
+                                <h5>Lorem ipsum dolor</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                  mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                  massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                  enim justo, rhoncus ut, imperdiet a,</p>
+                              </li>
+                              <li>
+                                <h5>Lorem ipsum dolor</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                  mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                  massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                  enim justo, rhoncus ut, imperdiet a,</p>
+                              </li>
+                              <li>
+                                <h5>Lorem ipsum dolor</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                  mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                                  massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                                  enim justo, rhoncus ut, imperdiet a,</p>
+                              </li>
+                            </ol>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 bottom-botton-sec">
+                  <span class="res-close margin-right-6 tab-4">[back]</span>
+                  <button class="btn btn-danger btn-nxt tab-5" type="button" data-dismiss="modal">Submit</button>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- end box-sec-5 -->
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>

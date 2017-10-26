@@ -1,0 +1,707 @@
+<div id="first-tab-group" class="tabgroup">
+  <div id="tab1">
+    <div class="container top-section">
+      <div class="ribbon-1"></div>
+      <div class="panel-body sp" style="background: #fff;padding-bottom: 30px;">
+        <div class="row">
+          <div class="panel-heading">CONFIRMATION STATUSES <button class="view-all btn-sec1">view all</button></div>
+          <div class="col-md-2 col-sm-12 six-1 margin-btm-10">
+            <button class="btn-sec"><div class="form-control"><span class="gotham-light">Pending</span> <span class="number-font">0</span></div></button>
+          </div>
+          <div class="col-md-2 col-sm-12 margin-btm-10">
+            <button class="btn-sec"><div class="form-control"><span class="gotham-light">Receved</span> <span class="number-font">1</span></div></button>
+          </div>
+          <div class="col-md-2 col-sm-12 margin-btm-10">
+            <button class="btn-sec"><div class="form-control"><span class="gotham-light">Denied</span> <span class="number-font">0</span></div></button>
+          </div>
+          <div class="col-md-2 col-sm-12 margin-btm-10">
+            <button class="btn-sec"><div class="form-control"><span class="gotham-light">Request More Info</span> <span class="number-font">1</span></div></button>
+          </div>
+          <div class="col-md-2 col-sm-12 margin-btm-10">
+            <button class="btn-sec"><div class="form-control"><span class="gotham-light">Reconfirmation</span> <span class="number-font">1</span></div></button>
+          </div>
+          <div class="col-md-2 col-sm-12 margin-btm-10">
+            <button class="btn-sec"><div class="form-control"><span class="gotham-light">Completed</span> <span class="number-font">0</span></div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container top-section2">
+      <div class="ribbon-1"></div>
+      <div class="panel-body sp" style="background: #fff;padding-bottom: 30px;">
+        <div class="row">
+          <div class="panel-heading">AUTHORIZATION STATUSES <button class="view-all btn-sec1">view all</button></div>
+          <div class="col-md-4 col-sm-12 six-1 margin-btm-10">
+            <button class="btn-sec"><div class="form-control"><span class="gotham-light">Pending Request</span> <span class="number-font">0</span></div></button>
+          </div>
+          <div class="col-md-4 col-sm-12 margin-btm-10">
+            <button class="btn-sec"><div class="form-control"><span class="gotham-light">Pending Response</span> <span class="number-font">1</span></div></button>
+          </div>
+          <div class="col-md-4 col-sm-12 margin-btm-10">
+            <button class="btn-sec"><div class="form-control"><span class="gotham-light">Authorization Completed</span> <span class="number-font">0</span></div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container bottom-section">
+      <div class="m1-1">
+        <div class="ribbon-1"></div>
+        <div class="panel-heading margin-top-c">CLIENT LIST </div>
+        <div class="col-lg-10 col-md-10 col-xs-12 col-sm-10 add-client1">
+          <div class="col-sm-3 box-1">
+            <div class="form-group">
+              <label for="email">From Date<b style="color:red">*</b> </label>
+              <input type="text" class="s1-1" id="text" name="date" placeholder="29/09/17"><img src="../../assets/css/icon.png">
+            </div>
+          </div>
+          <div class="col-sm-3 s2-1 box-2">
+            <div class="form-group">
+              <label for="email">To Date &nbsp;&nbsp; </label>
+              <input type="text" class="s1-1 s4-1" id="text" name="date" placeholder="29/09/17"><img src="../../assets/css/icon.png">
+            </div>
+          </div>
+          <div class="col-sm-2 s3-1 box-3">
+            <div class="form-group">
+              <label for="sel1">Field Name</label>
+              <select class="form-control" id="sel1">
+                        <option>Company Name </option>
+                     </select>
+            </div>
+          </div>
+          <div class="col-sm-2 s3-1 box-4">
+            <div class="form-group">
+              <label for="email">Search Criteria </label>
+              <input type="text" class="form-control" id="text">
+            </div>
+          </div>
+          <div class="col-sm-2 s2-1 box-5">
+            <button type="button" class="btn btn-danger six3-1">Search</button>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 add-client">
+          <button type="button" class="btn btn1 btn-danger pull-right" data-toggle="modal" data-target="#clientAdd">ADD NEW CLIENT</button>
+        </div>
+
+        <div class="col-sm-12">
+          <div class="table-responsive table-responsive-1">
+            <table class="table table-1">
+              <thead>
+                <tr>
+                  <th>Company name</th>
+                  <th>Bank Name</th>
+                  <th>Bank Branch</th>
+                  <th>Bal Ended Date</th>
+                  <th>Request Date</th>
+                  <th>Last Bank Reply Date</th>
+                  <th>Confirmation Status</th>
+                  <th>Authorization Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AppAsia Syn Cloud Bank</td>
+                  <td>MAYBANK</td>
+                  <td>HEADQUARTES</td>
+                  <td>31/2/2017</td>
+                  <td>7/5/2017</td>
+                  <td> - </td>
+                  <td style="color: red">Pending</td>
+                  <td style="color: red">Pending</td>
+                </tr>
+                <tr>
+                  <td>AppAsia Syn Cloud Bank</td>
+                  <td>MAYBANK</td>
+                  <td>HEADQUARTES</td>
+                  <td>31/2/2017</td>
+                  <td>7/5/2017</td>
+                  <td>28/09/2017</td>
+                  <td style="color: green;">Completed</td>
+                  <td style="color: green;">Completed</td>
+                </tr>
+                <tr>
+                  <td>AppAsia Syn Cloud Bank</td>
+                  <td>MAYBANK</td>
+                  <td>HEADQUARTES</td>
+                  <td>31/2/2017</td>
+                  <td>7/5/2017</td>
+                  <td>28/09/2017</td>
+                  <td style="color: blue;">Reconformation</td>
+                  <td style="color: blue;">Reconformation</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <div class="m2-1">
+        <div class="ribbon-1"></div>
+        <div class="panel-heading ">UPDATES</div>
+        <div class="panel-body">
+          <div class="leftupdate">
+            <p>Schedule maintaince from 12am to 1pm... <span> <a href="" style="color:#337ab7;">[view all] </a></span> </p>
+            <p>M Platform enhance client autorization with voice Recoginsation Feature... <span><a href="" style="color:#337ab7;"> [view all] </a></span>              </p>
+            <p>M Platform enhance client autorization with voice Recoginsation Feature...</p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+  </div>
+  <!-- end first tab -->
+
+  <!-- start tab 2 -->
+  <div id="tab2">
+    <div class="container middle-portion">
+      <div class="title"> AppAsia Cloud Sdn Bhd <a class="client-search">client search</a></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="sri-2">
+            <div class="col-md-12 col-sm-12  col-xs-12 sri-2-margin-btn">
+              <label>1</label>
+              <h2>Client Profile</h2>
+              <div class="clear"></div>
+            </div>
+            <div class="sri-2-part-section">
+              <p>company name <a href="#" class="client-search">modify</a></p>
+              <span class="sri-2-part-section-light">AppAsia Cloud Sdn Bhd</span>
+            </div>
+            <div class="sri-2-part-section">
+              <p>Lead Auditor <a href="#" class="client-search">modify/share</a></p>
+              <span class="sri-2-part-section-light">Raur Kumar, UHY KL</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="sri-2">
+            <div class="col-md-6  col-sm-6 col-xs-12 sri-2-margin-btn">
+              <label>2</label>
+              <h2>bank accounts</h2>
+              <div class="clear"></div>
+            </div>
+            <div class="col-md-6  col-sm-6 col-xs-12 sri-2-margin-btn">
+              <button type="button" class="btn btn1 btn-danger pull-right ad-1">Add Bank Account</button>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 margin-sec-1">
+
+              <table class="table bank_tbl">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Bank Name</th>
+                    <th>Branch</th>
+                    <th>Signer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>MayBank</td>
+                    <td>Headquaters</td>
+                    <th>2</th>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>MayBank</td>
+                    <td>Headquaters</td>
+                    <th>2</th>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>MayBank</td>
+                    <td>Headquaters</td>
+                    <th>2</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bottom-section">
+      <div class="m1-1 border-radius-8">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 add-client-page-2">
+          <div class="panel-heading">SIGNER'S AUTHORIZATION</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 add-client-page-2">
+          <button type="button" class="btn btn1 btn-danger pull-right ad-1">Add New Signer</button>
+        </div>
+
+        <div class="col-sm-12">
+          <div class="table-responsive table-responsive-1">
+            <table class="table table-1 table-page-2">
+              <thead>
+                <tr>
+                  <th>NAME</th>
+                  <th>IC NUMBER</th>
+                  <th>STATUS</th>
+                  <th>REQUEST DATE</th>
+                  <th>LAST RESPONSE DATE</th>
+                  <th>ACTION</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Abdul Rahamat Mahhamad</td>
+                  <td>12345</td>
+                  <td style="color: #000"><b>Authorized</b></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td style="color: #1A63B2"><a href="#">View</a></td>
+                </tr>
+                <tr>
+                  <td>Abdul Rahamat Mahhamad</td>
+                  <td>12345</td>
+                  <td style="color: #000"><b>Authorized</b></td>
+                  <td>02/10/17</td>
+                  <td>02/10/17</td>
+                  <td style="color: #1A63B2">View</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="m1-1 border-radius-8">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add-client-page-2">
+          <div class="panel-heading">BANK CONFIRMATION REQUEST</div>
+        </div>
+
+
+
+        <div class="col-sm-12">
+          <div class="table-responsive table-responsive-1">
+            <table class="table table-1 table-page-2">
+              <thead>
+                <tr>
+                  <th>BANK NAME</th>
+                  <th>BRANCH</th>
+                  <th>STATUS</th>
+                  <th>ENDING DATE</th>
+                  <th>REQUEST DATE</th>
+                  <th>LAST RESPONSE DATE</th>
+                  <th>ACTION</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>RHB</td>
+                  <td>PJSS2</td>
+                  <td style="color: #000"><b>Received</b></td>
+                  <td>31/03/17</td>
+                  <td>10/10/17</td>
+                  <td>11/10/17</td>
+                  <td style="color: #1A63B2"><a href="24.html">View</a></td>
+                </tr>
+                <tr>
+                  <td>RHB</td>
+                  <td>PJSS2</td>
+                  <td style="color: green">Completed</td>
+                  <td>31/03/17</td>
+                  <td>10/10/17</td>
+                  <td>11/10/17</td>
+                  <td><a href="24.html">View</a></td>
+                </tr>
+                <tr>
+                  <td>RHB</td>
+                  <td>PJSS2</td>
+                  <td style="color: green"><a href="21.html" style="color: #1A63B2">Request More Info</a></td>
+                  <td>31/03/17</td>
+                  <td>10/10/17</td>
+                  <td>11/10/17</td>
+                  <td style="color: #1A63B2"><a href="#">View</a></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end tab 2 -->
+</div>
+<!-- end tab group -->
+
+<div class="clear"></div>
+
+
+<!-- pop up 1 client add -->
+<div class="modal fade" id="clientAdd" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content form-1">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h5 class="modal-title">Step 1: Add a Client Profile</h5>
+      </div>
+      <div class="modal-body pop-up-page1">
+        <form>
+          <div class="">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p style="color: gray">Company Information</p>
+            </div>
+            <!-- start -->
+            <div class="col-sm-6 col-xs-12 no-padding-popup">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Company No <span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_company_no" required onblur="Javascript:checkCompanyno();">
+                  <span class="message" id="message1" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Company Name <span class="required">*</span></label>
+                  <input type="text" class="form-control" id="check_company_name" required readonly onblur="Javascript:checkCompanyname();">
+                  <span class="message" id="message2" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Address 1<span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_address1" required readonly onblur="Javascript:checkAddress1();">
+                  <span class="message" id="message3" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Address 2<span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_address2" required readonly onblur="Javascript:checkAddress2();">
+                  <span class="message" id="message4" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Telephone <span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_telephone" required readonly onblur="Javascript:checkTelephone();">
+                  <span class="message" id="message5" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Fax <span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_fax" required readonly onblur="Javascript:checkFax();">
+                  <span class="message" id="message6" style="color: Red;"></span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-6 col-xs-12 no-padding-popup">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Website <span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_website" required readonly onblur="Javascript:checkWebsite();">
+                  <span class="message" id="message7" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Email <span class="required">*</span></label>
+                  <input type="text" class="form-control" id="check_email" required readonly onblur="Javascript:checkEmail();">
+                  <span class="message" id="message8" style="color: Red;"></span>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Country <span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_country" required readonly onblur="Javascript:checkCountry();">
+                  <span class="message" id="message9" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">City<span class="required">*</span></label>
+                  <input type="text" class="form-control" id="check_city" required readonly onblur="Javascript:checkCity();">
+                  <span class="message" id="message10" style="color: Red;"></span>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">State <span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_state" required readonly onblur="Javascript:checkState();">
+                  <span class="message" id="message11" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Postal Code<span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_postal_code" required readonly onblur="Javascript:checkPostalcode();">
+                  <span class="message" id="message12" style="color: Red;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-xs-12 no-padding-popup">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p style="color: gray">Contact Person Information</p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">First Name <span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_f_name" required readonly onblur="Javascript:checkFname();">
+                  <span class="message" id="message13" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">Last Name <span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_l_name" required readonly onblur="Javascript:checkLname();">
+                  <span class="message" id="message14" style="color: Red;"></span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label for="text">NRIC<span class="required">*</span> </label>
+                  <input type="text" class="form-control" id="check_nric" required readonly onKeyPress="Javascript:checkNric();">
+                  <span class="message" id="message15" style="color: Red;"></span>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p><span style="color:red; margin-top:10px;"> * Required  field.</span></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12" style="text-align: center;margin-top: 20px;">
+                <button type="submit" class="btn btn-danger next-step" id="s_next1" style="display:none;" onclick='return false;'>Save & Next</button>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+
+
+    <!-- Modal content-->
+    <div class="modal-content form-2">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h5 class="modal-title">AppAsia Cloud Sdb Bhd</h5>
+      </div>
+      <div class="modal-body pop-up-page1">
+        <div class="">
+          <!-- pop up 2 start -->
+          <div class="pop-up-form">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h4 class="head-step">Step 2: Add Account</h4>
+              <div class="border-full-1"></div>
+              <div class="clear"></div>
+            </div>
+
+            <form class="pop-up-form">
+              <div class="form-horizontal">
+                <div class="form-group">
+                  <label class="control-label col-sm-2 float-left" for="email">Bank:</label>
+                  <div class="col-sm-4">
+                    <select class="form-control" id="sel1">
+                     <option>MayBank</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                   </select>
+
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2 float-left" for="pwd">Branch:</label>
+                  <div class="col-sm-4">
+                    <select class="form-control" id="sel1">
+                     <option>Headquarters</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2"></label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control pop-up-txtarea" id="comment">Maybank Tower 100, Jalan Tun Perek, Bukit Bintaing</textarea>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-xs-12">
+                  <a href="#">[back]</a>
+                </div>
+                <div class="col-sm-8 col-xs-12 twobtn">
+                  <button type="button" class="btn btn-danger">Save</button> &nbsp;&nbsp;<button type="button" class="btn btn-danger">Add More</button>
+                </div>
+                <div class="clear"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12 media-no-padding">
+                  <div class="col-sm-12">
+                    <div class="form-group pos-rel">
+                      <label for="comment">Signers</label>
+                      <a href="#" class="remove">[remove]</a>
+                      <textarea class="form-control pop-up-txtarea" id="comment">1. Ong Chee 
+                       </textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 media-no-padding">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="text">Name <span style="color: red">*</span>  </label>
+                      <input type="text" class="form-control" id="check_s_name" required onblur="Javascript:checkSname();">
+                      <span class="message" id="message16" style="color: Red;"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="text">NRIC <span style="color: red">*</span>  </label>
+                      <input type="text" class="form-control" id="check_s_nric" required readonly onblur="Javascript:checkSnric();">
+                      <span class="message" id="message17" style="color: Red;"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="text">Email <span style="color: red">*</span>  </label>
+                      <input type="text" class="form-control" id="check_s_email" required readonly onblur="Javascript:checkSemail();">
+                      <span class="message" id="message18" style="color: Red;"></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="text">Mobile <span style="color: red">*</span>  </label>
+                      <input type="text" class="form-control" id="check_s_mobile" required readonly onKeyPress="Javascript:checkSmobile();">
+                      <span class="message" id="message19" style="color: Red;"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12" style="text-align: center;margin-top:8px;">
+                  <button type="submit" class="btn btn-danger" id="s_nextf" data-dismiss="modal">Save</button>&nbsp;
+                  <button
+                    type="submit" class="btn btn-danger" id="s_nextf">Add Signer</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- end pop up 2 -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end client add pop up -->
+
+<!-- start request authorization -->
+<!-- Modal -->
+<div class="modal fade" id="authorization" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- start first authorization content-->
+      <div class="pop-upauth1">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Request Signer's Authorization</h4>
+        </div>
+        <div class="modal-body">
+          <div class="col-sm-12">
+            <div class="panel-group panel-info6-7">
+              <div class="panel panel-blue">
+                <div class="panel-body">
+                  <form class="form-horizontal rqst-sign">
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-12">Auditor</label>
+                      <div class="col-sm-9 col-xs-12">
+                        <p class="form-control-static">Raur Kumar, UHY Malaysia</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-12">Company</label>
+                      <div class="col-sm-9 col-xs-12">
+                        <p class="form-control-static">AppAsia Cloud Sdn Bhd</p>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-12">Bank Info</label>
+                      <div class="col-sm-9 col-xs-12">
+                        <p class="form-control-static"> Maybank - Headquarters</p>
+                        <p class="sub-para">sdfsdfsdf sdfdsf jojklsdf sdfsdf sdfsdfsdf o dsfdsfsdfsdf jhiohlkk </p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-12">Signers</label>
+                      <div class="col-sm-9 col-xs-12">
+                        <p class="form-control-static">Abdual Muhammad Bin Khadil</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-12">NRIC Number <span style="color: red">*</span></label>
+                      <div class="col-sm-3 col-xs-12">
+                        <input type="text" class="form-control" id="usr" value="123456">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-12">Mobile Number <span class="required">*</span></label>
+                      <div class="col-sm-1 col-xs-4">
+                        <select class="form-control" id="sel1" style="width: 66px;">
+                           <option>+06</option>
+                         </select>
+                      </div>
+                      <div class="col-sm-2 col-xs-8">
+                        <input type="text" class="form-control" value="964857152658">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-12">Authorisation Method<span class="tooltip-6"><a href="" data-tooltip="I'm the tooltip text.">?</a></span></label>
+
+                      <div class="col-sm-9 col-xs-12">
+                        <div class="checkbox">
+                          <input type="radio" name="optradio"> Email & SMS
+                        </div>
+                        <div class="checkbox">
+                          <input type="radio" name="optradio"> IVR Call
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+
+                  <hr>
+                  <div class="col-sm-12" style="text-align: center;">
+                    <button type="button" class="btn btn-danger auth-1-popup" data-dismiss="modal">SEND REQUEST</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!-- end first authorization -->
+
+    </div>
+
+  </div>
+</div>
+<!-- end request authorization -->
