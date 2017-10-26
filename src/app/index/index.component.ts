@@ -1,4 +1,6 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import { Router } from '@angular/router';
+
 declare var $;
 
 @Component({
@@ -7,10 +9,26 @@ declare var $;
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
-
-  constructor() { }
+  user: object;
+  constructor(private router:Router) {
+    this.user  = {
+      username:'',
+      password:''
+    }
+   }
 
   ngOnInit() {
+  }
+  checkLogindetails(user){
+    if(user.username === 'bank@bank.com' && user.password === 'bank'){
+      console.log('bank');
+      this.router.navigate(['section18']);
+    }else if(user.username === 'auditor@auditor.com' && user.password === 'auditor'){
+      console.log('auditor');
+      this.router.navigate(['section8']);
+    }else{
+      this.router.navigate(['']);
+    }
   }
 
   ngAfterViewChecked() {

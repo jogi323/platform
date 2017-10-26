@@ -20,13 +20,13 @@
             </ul>
           </div>
         </div>
-        <form class="form-section" onSubmit="return checkLogindetails();">
+        <form class="form-section" novalidate>
           <div class="login-head">Platform</div>
           <div class="login-txt">Login to your MIAPlatform my account</div>
-          <input type="email" id="inputEmail" class="form-control" placeholder="User Id*" required autofocus>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password*" required>
+          <input type="email" id="inputEmail" name='username' class="form-control" placeholder="User Id*" [(ngModel)]='user.username' required autofocus>
+          <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password*" [(ngModel)]='user.password' required>
           <div class="login-btn">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" (click)='checkLogindetails(user)'>Log in</button>
           </div>
           <span class="message" id="message_login" style="color: Red;"></span>
           <div class="forgot-u-p">

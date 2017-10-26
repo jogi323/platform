@@ -63,7 +63,8 @@ import { SectionuComponent } from './sectionu/sectionu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [],
